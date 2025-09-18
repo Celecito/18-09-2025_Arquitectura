@@ -1,0 +1,20 @@
+{
+  "name": "18-09-2025_arquitectura",
+  "version": "1.0.0",
+  "description": "",
+  "main": "AsciiJ.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Celecito/18-09-2025_Arquitectura.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Celecito/18-09-2025_Arquitectura/issues"
+  },
+  "homepage": "https://github.com/Celecito/18-09-2025_Arquitectura#readme"
+}

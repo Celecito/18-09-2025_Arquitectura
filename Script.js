@@ -14,18 +14,19 @@ function miFuncion() {
 
 function miFuncion2() {
     // Encriptar: convierte texto a códigos ASCII y muestra letras separadas
-    let mensaje = document.getElementById("a").value;
-    let respuesta = "";
-    let letrasSeparadas = "";
-    for (let vc = 0; vc < mensaje.length; vc++) {
-        respuesta += mensaje.charCodeAt(vc);
-        letrasSeparadas += mensaje[vc];
-        if (vc < mensaje.length - 1) {
-            respuesta += ",";
-            letrasSeparadas += ",";
-        }
-    }
-    document.getElementById("b").innerHTML = 
-        "Su palabra codificada es: " + respuesta + "<br>" +
-        "Letras separadas: " + letrasSeparadas;
+    let vc = 0;
+  let mensaje = document.getElementById("a").value;
+  let respuesta = "";
+  let salida = ""
+  let caracter = "";
+  let numero = 0;
+  for (vc = 0; vc < mensaje.length; vc++) {
+      
+    respuesta = respuesta + "," + mensaje[vc].charCodeAt(0);
+    numero = mensaje[vc].charCodeAt(0) + 10;
+    caracter = String.fromCharCode(numero);
+    salida = salida + caracter;
+  }
+
+  document.getElementById("b").innerHTML = salida;
 }
